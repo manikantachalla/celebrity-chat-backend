@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 const openai = new OpenAI({
-  apiKey: "sk-svcacct-d7o52nWVEx5QwpHaLLjbtykGvrcL93cMtRuKPxZZKMxvzB-Jsgc5n8T3BlbkFJuT6bM_tDECmRe04YrufJKeW59pNe5OMEhK5NMMQ_o5jBdIKocWwSQA", // Replace with your actual API key
+  apiKey: process.env.OPEN_API_KEY
 });
 
 // Helper function to create or retrieve a session
